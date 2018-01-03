@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.hu.tyler.soundboard.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--For Future references, Make this thing a linear Layout instead-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--I manually created these buttons but in the future, I will probably do a for loop
+            of make Button = new Button();, then give a layout a id and do
+            LinearLayout buttonContainer = (LinearLayout) findViewById(R.id.buttonContainer);
+            , then buttonContainer.addView(button); Much better than manually doing this one
+            by one. -->
+            <Button
+                android:id="@+id/predButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="Predator Clicking"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/sobButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="52dp"
+                android:layout_toLeftOf="@+id/predButton"
+
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="SOB"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/choppaButton"
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sobButton"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="Get to the choppa"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/faggotsButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/sobButton"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="52dp"
+                android:layout_toLeftOf="@+id/choppaButton"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="Faggots"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/uglyButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/faggotsButton"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="Ugly MF"
+                android:textColor="#FFFFFF" />
+
+            <Button
+
+                android:id="@+id/bleedButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/faggotsButton"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="52dp"
+                android:layout_toLeftOf="@+id/uglyButton"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="If it Bleeds..."
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/nobleedsbutton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/bleedButton"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="No time to Bleed"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/ciaButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/bleedButton"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="52dp"
+                android:layout_toLeftOf="@+id/nobleedsbutton"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="What's wrong? CIA got you..."
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/predatorLaughButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ciaButton"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="Predator Laughing"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/predatorHowlingButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/ciaButton"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="52dp"
+                android:layout_toLeftOf="@+id/predatorLaughButton"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="Predator Howling"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/predatorVisionButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/predatorLaughButton"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="Predator Vision"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/predXButton"
+                android:layout_marginTop="52dp"
+                android:layout_below="@+id/predatorLaughButton"
+                android:layout_toLeftOf="@+id/predatorVisionButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/round_button"
+                android:textSize="10dp"
+                android:onClick="onClick"
+                android:text="Predator Clicking Loop(Touch again to Stop)"
+                android:textColor="#FFFFFF"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
